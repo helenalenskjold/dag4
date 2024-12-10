@@ -1,0 +1,97 @@
+@charset "utf-8";
+html {
+    background-color: #F5F5F5;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/webfont/montserrat-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/webfont/montserrat-variablefont_wght-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alfa Slab One';
+    src: url('font/webfont/alfaslabone-regular-webfont.woff2') format('woff2'),
+         url('font/webfont/alfaslabone-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*min header*/
+
+body {
+    margin: 0;
+}
+.header {
+    background: transparent;
+    font-family: 'Alfa Slab One';
+    font-size: 20px;
+}
+
+/*logo*/
+.logo {
+    float: left;
+    height: 30px;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+a {
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 10px;
+    padding: 20px 5px;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    color: blue;
+}
+
+a:hover {
+    color: #4981f2;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation li {
+    flex-basis: 100%;
+}
+
+.navigation .user {
+    flex-basis: 33%;
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: 750px) {
+    .navigation ul {
+      flex-wrap: nowrap;
+    }
+  }
+
+  /*mit billede på forsiden*/
+.frontpic {
+    position: absolute;
+    right: 0;
+    top:55%; 
+    transform: translateY(-55%);
+    width: 80%; 
+    max-width: 90%; 
+    height: auto;
+}
+
